@@ -1,0 +1,40 @@
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> stack=[]
+>>> print(stack)
+[]
+>>> print(type(stack))
+<class 'list'>
+>>> stack.append("HAI")
+>>> print(stack)
+['HAI']
+>>> print(stack[0])
+HAI
+>>> stack[1]=123
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list assignment index out of range
+>>> stack[0]=123
+>>> print(stack)
+[123]
+>>> stack.insert(1,"fvfbb")
+>>> print(stack)
+[123, 'fvfbb']
+>>> print(stack)
+[123, 'fvfbb']
+>>> stack.insert(5,"ffbgvfb")
+>>> print(stack)
+[123, 'fvfbb', 'ffbgvfb']
+>>> print(stack[5])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> print(stack[0])
+123
+>>> print(stack[3])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> print(stack[2])
+ffbgvfb
+>>>
